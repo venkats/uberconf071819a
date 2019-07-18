@@ -1,0 +1,15 @@
+In this lab we will create a Swap component that will display the first child and then the second or vice-versa.
+
+Commands you need:
+npm install
+npm test
+
+To view the coverage:
+npm run coverage
+
+To lint:
+npm run eslint
+
+After all tests pass:
+npm run build
+npm start

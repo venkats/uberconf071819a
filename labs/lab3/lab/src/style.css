@@ -1,0 +1,15 @@
+tr:first-of-type {
+  background-color: orange;
+}
+
+tr:nth-of-type(even) {
+  background-color: lightgray;
+}
+
+tr:nth-of-type(odd):not(:first-child) {
+  background-color: beige;
+}
+
+.highlighted {
+  bgcolor: red;
+}
