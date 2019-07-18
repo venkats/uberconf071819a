@@ -1,0 +1,17 @@
+In this lab we will create a React application that will display today's date and current time. We will use JSX. We will create the application following a series of tests.
+
+Please work on only one test at a time. Change xit to it for one test. See the test fail. Then make the test to pass by writing minimum code. Then, while you leave that test active, move on to the next test.
+
+Commands you need:
+npm install
+npm test
+
+To view the coverage:
+npm run coverage
+
+To lint:
+npm run eslint
+
+After all tests pass:
+npm run build
+npm start
