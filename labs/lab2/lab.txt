@@ -1,0 +1,15 @@
+In this lab we will create a React application that will display status of airports. Work with one test at a time.
+
+Commands you need:
+npm install
+npm test
+
+To view the coverage:
+npm run coverage
+
+To lint:
+npm run eslint
+
+After all tests pass:
+npm run build
+npm start
