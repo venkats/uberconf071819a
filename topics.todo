@@ -1,0 +1,103 @@
+Creating React Applications
+Venkat Subramaniam
+venkats@agiledeveloper.com
+@venkat_s    
+
+Access:
+URL: https://github.com/venkats/uberconf071819a
+
+Creating React Components:
+-What is React?
+-how does React help?
+-maintains virtual DOM
+-ease of programming
+-performance without being brittle
+-good separation of concerns
+-What's a Component?
+-reusable, isolated piece of code that represents a UI view
+-a component
+	- may have state
+	- renders contents into a virtual DOM
+	-may have child components
+-creating a component	
+ -extends Component
+ -provide a render method
+-ReactDOM
+ -does the rendering
+  -render()
+  -on the server-side: renderToString(), renderToStaticMarkup()
+ -render(elementToRender, DOMElementToRenderInto)
+-tree of elements
+-A Hello application
+ -index.html
+ -start.js
+ -app.js
+-creating state
+-creating view and binding
+ -setting state vs. setState
+-State
+-Key
+ -needed for efficiency
+ -unique among siblings
+ -avoid duplication
+-Using Key
+-lab
+
+Working with State and Events:
+-properties
+ -attributes of elements
+ -passed like attributes of HTML elements
+ -accessed using props
+ -pass child elements
+-Creating a Greet component and passing name to it
+-missing properties
+-default properties
+	-static defaultProps 
+	-example: <Greet name= when=> (there, today as default)
+-setting state
+ -state.when = props.when.toUpperCase()
+-Should we use a property or state?
+-State change woes
+	-what happens when parent changes the property but child uses state?
+  -parent changes when from right now to "at this moment"	
+-getDerivedStateFromProps(props, state)
+ -static method
+ -state that is "derived" from properties
+ -initialize state in the constructor
+ -if no change, return null
+ -if there is a change, return the new state
+-using getDerivedStateFromProps
+-lab
+
+Components and Lifecycle:
+-constructor
+ -don't do any subscriptions here
+ -keep it short, fast
+ -pass props to super() first
+ -assign to state, but not using setState()
+ -don't write constructor if you do not really need one
+-life cycle events
+ -mounting events when created and inserted into DOM
+ -updating events when property or state changes
+-mounting events
+ -getDerivedStateFromProps(props state)
+ -render()
+ -componentDidMount()—DOM has been rendered
+ -componentWillUnmount()
+-Let's observe events using a Display component that should count
+ -let the parent unmount if count == 0
+-updating events
+ -getDerivedStateFromProps(props, state)
+ -shouldComponentUpdate(nextProps, nextState) - false is a hint
+ -render()
+ -getSnapshotBeforeUpdate(prevProps, prevState)
+ -componentDidUpdate(prevProps, prevState, snapshot)
+-Let's observe update events
+-how to cause events?
+ -setState
+ -forceUpdate - not preferred
+-proper cleanup
+ -show time only if show is true
+ -componentWillUnmount()
+-accessing children
+-lab
