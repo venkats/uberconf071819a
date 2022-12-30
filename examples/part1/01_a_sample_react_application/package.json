@@ -36,7 +36,7 @@
     "istanbul": "^0.4.5",
     "jsdom": "^15.1.1",
     "lite-server": "^2.5.3",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "mocha-clearscreen-reporter": "^1.0.1",
     "sinon": "^7.3.2",
     "webpack": "^4.35.0",
